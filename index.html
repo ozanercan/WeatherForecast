@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+    <script src="js/jquery.min.js"></script>
+    <title>Hava Durumu</title>
+</head>
+<body class="bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <form class="row">
+                    <div class="col-12">
+                        <label class="form-control-plaintext text-white text-center fs-2">Şehir</label>
+                        <select id="cities" name="cities" class="form-select" onchange="getWeatherForecastByCity(this.value)"></select>
+                    </div>
+                </form>
+            </div>
+            <div id="mainInputContainer" class="col-12 bg-dark rounded-3 mt-5 text-white"></div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/site.js"></script>
+</body>
+</html>
